@@ -1,0 +1,16 @@
+package com.mycompany.fibonaci;
+public class Fibonaci {
+
+    public static void main(String[] args) {
+        long num1 = 0, num2 = 1;
+        
+        System.out.println("Los primeros 50 números de la sucesión de Fibonacci son:");
+        
+        for (int i = 1; i <= 50; i++) {
+            System.out.print(num1 + " ");
+            long suma = num1 + num2;
+            num1 = num2;
+            num2 = suma;
+        }
+    }
+}
